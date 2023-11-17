@@ -12,9 +12,11 @@ import {
 } from "@/components/ui/dropdown-menu";
 
 export function ModeToggle() {
-  const { setTheme, theme } = useTheme();
+  const { setTheme, theme, systemTheme } = useTheme();
 
   const isDarkMode = theme === "dark";
+
+  
 
   return (
     <DropdownMenu>
@@ -26,13 +28,13 @@ export function ModeToggle() {
         >
           {isDarkMode ? (
             <>
-              <Sun className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all" />
-              <Moon className="absolute h-[1.2rem] w-[1.2rem]  scale-0 transition-all" />
+              <Sun className="h-[1.2rem] w-[1.2rem] rotate-0 scale-0 transition-all" />
+              <Moon className="absolute h-[1.2rem] w-[1.2rem]  scale-100 transition-all" />
             </>
           ) : (
             <>
-              <Sun className="h-[1.2rem] w-[1.2rem] rotate-0 scale-0 transition-all" />
-              <Moon className="absolute h-[1.2rem] w-[1.2rem] scale-100 transition-all" />
+              <Sun className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all" />
+              <Moon className="absolute h-[1.2rem] w-[1.2rem] scale-0 transition-all" />
             </>
           )}
           <span className="sr-only">Toggle theme</span>
@@ -55,10 +57,9 @@ export function ModeToggle() {
           Dark
         </DropdownMenuItem>
         <DropdownMenuItem
-          onClick={() => setTheme("system")}
+          onClick={() => systemTheme == "dark" ? setTheme("dark") : setTheme("light")}
           className="flex items-center hover:bg-gray-100 dark:hover:bg-gray-800 p-2 transition-all"
         >
-          {/* Add Laptop icon before System theme */}
           <Laptop className="h-4 w-4 mr-2" />
           System
         </DropdownMenuItem>
