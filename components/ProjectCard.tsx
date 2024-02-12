@@ -1,40 +1,8 @@
 import React from "react";
-import { SiGithub } from "react-icons/si";
-
-interface Project {
-  title: string;
-  description: string;
-  livePreviewUrl?: string;
-  githubRepoUrl?: string;
-  techsUsed?: string;
-}
+// import { SiGithub } from "react-icons/si";
+import { projects } from "@/lib/utils";
 
 export function ProjectCard() {
-  const projects: Project[] = [
-    {
-      title: "supabase-next-ssr-auth",
-      description:"A boilerplate for next.js with supabase for authentication and SSR.",
-      // livePreviewUrl: "",
-      techsUsed: "Next.js, Typescript, Supabase, Shadcn/ui",
-      githubRepoUrl: "https://github.com/SachinD6/supabase-ssr-auth"
-    },
-    {
-      title: "saasly", 
-      description:"A saas website with stripe subscription integration and supabase for authentication and database.",
-      // livePreviewUrl: "",
-      githubRepoUrl:"https://github.com/SachinD6/saasly",
-      techsUsed: "Next.js, Typescript, Supabase, Stripe, Shadcn/ui"
-    },
-    {
-      title: "disney plus clone",
-      description:
-        "A clone of disney plus UI built using React and styled-components.",
-      // livePreviewUrl: "",
-      techsUsed: "Next.js, Styled Components, Javascript",
-      githubRepoUrl: "https://github.com/SachinD6/Dmovie"
-    },
-   
-  ];
 
   return (
     <>
