@@ -9,7 +9,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next"
 
 import "./globals.css";
 
-// const inter = GeistSans({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"] });
 import Navbar from "@/components/Navbar";
 import { ThemeProvider } from "@/components/theme-provider";
 import Footer from "@/components/Footer";
@@ -26,17 +26,17 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={GeistMono.className}>
+      <body className={inter.className}>
       <ThemeProvider
             attribute="class"
             defaultTheme="system"
             enableSystem
             disableTransitionOnChange
           >
-        <div className="bg-white dark:bg-black h-screen">
-          <div className="fixed inset-0 max-w-6xl mx-auto h-screen bg-primary p-24 bg-zinc-50 dark:text-white dark:bg-zinc-900"></div>
+        <div className="bg-white dark:bg-[rgb(22,22,22)] h-screen">
+          <div className="fixed inset-0 max-w-6xl mx-auto h-screen bg-primary p-24 bg-zinc-50 dark:text-white "></div>
 
-          <div className="max-w-6xl mx-auto relative p-5 sm:px-24 bg-bllue-100 dark:bg-zinc-900">
+          <div className="max-w-6xl mx-auto relative p-5 sm:px-24  dark:bg-[rgb(22,22,22)]">
             <Navbar />
             {children}
             <Footer />

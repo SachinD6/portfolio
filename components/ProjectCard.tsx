@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 // import { SiGithub } from "react-icons/si";
 import { projects } from "@/lib/utils";
@@ -5,7 +6,7 @@ import { projects } from "@/lib/utils";
 export function ProjectCard() {
 
   return (
-    <>
+    <>      
       <div className="max-w-2xl ">
         {projects.map((project, index) => (
           <div key={index} className="space-y-2 my-8">
