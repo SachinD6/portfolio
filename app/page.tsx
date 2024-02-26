@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Socials from "@/components/Socials";
-import { ProjectCard } from "@/components/ProjectCard";
 import { TechsAndSkills } from "@/components/TechsAndSkills";
 import type { Metadata } from "next";
 import PortfolioIntro from "@/components/PortfolioIntro";
