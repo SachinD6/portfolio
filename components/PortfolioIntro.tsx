@@ -24,7 +24,7 @@ const PortfolioIntro = () => {
             <Link href={"https://github.com/sachind6"}>
               <span className="text-neutral-500 ">@ sachind6</span>
             </Link>
-            <Status isAvailable/>
+            <Status status="Available"/>
           </div>
         </div>
 

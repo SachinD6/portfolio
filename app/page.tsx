@@ -5,6 +5,7 @@ import { ProjectCard } from "@/components/ProjectCard";
 import { TechsAndSkills } from "@/components/TechsAndSkills";
 import type { Metadata } from "next";
 import PortfolioIntro from "@/components/PortfolioIntro";
+import ProjectSection from "@/components/ProjectSection";
 
 export const metadata: Metadata = {
   title: "Sachin- Portfolio",
@@ -18,8 +19,9 @@ export default function Home() {
       <PortfolioIntro />
 
       <div className="projects  mt-16">
-        <h2 className="font-normal text-2xl mb-6">&lt;projects&gt;</h2>
-        <ProjectCard />
+        {/* <h2 className="font-normal text-2xl mb-6">&lt;projects&gt;</h2> */}
+        {/* <ProjectCard /> */}
+        <ProjectSection />
       </div>
 
       <div className="projects  mt-16">
