@@ -37,7 +37,7 @@ export default function Navbar() {
         ))}
       </div>
      <div className="mx-auto mt-4 lg:mt-0">
-     <ModeToggle />
+     {/* <ModeToggle /> */}
      </div>
     </nav>
   );

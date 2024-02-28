@@ -4,6 +4,7 @@ import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { motion } from "framer-motion";
 import Status from "./Status";
+import Social from "./Socials";
 
 const PortfolioIntro = () => {
   return (
@@ -42,6 +43,7 @@ const PortfolioIntro = () => {
             professionally. Let&apos;s connect and explore the endless
             possibilities of web development together!
           </p>
+          {/* <Social /> */}
 
           <motion.button className=" pt-3 pl-8 gap-2 flex mt-10 border border-neutral-700/30 rounded-md p-2 w-full lg:w-44 bg-neutral-800/20 text-sm dark:text-neutral-400 font-semibold" whileHover={{ scale: 1.1}}>
             View resume
