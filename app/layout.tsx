@@ -10,7 +10,6 @@ import { cn } from "@/lib/utils";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
-import { ThemeProvider } from "@/components/theme-provider";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
@@ -46,13 +45,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={cn(inter.className, "bg-[#161616]")}>
-      <ThemeProvider
-            attribute="class"
-            defaultTheme="dark"
-            enableSystem
-            disableTransitionOnChange
-            enableColorScheme
-          >
+
         <div className="bg-[#161616] h-screen">
           {/* <div className="fixed inset-0 max-w-6xl mx-auto h-screen bg-primary p-24 bg-zinc-50 dark:text-white "></div> */}
 
@@ -64,7 +57,6 @@ export default function RootLayout({
             <SpeedInsights />
           </div>
         </div>
-        </ThemeProvider>
       </body>
     </html>
   );
