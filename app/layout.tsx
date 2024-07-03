@@ -44,7 +44,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={cn(inter.className, "bg-[#161616]")}>
+      <body className={cn(inter.className, "bg-[#161616] text-white")}>
 
         <div className="bg-[#161616] h-screen">
           {/* <div className="fixed inset-0 max-w-6xl mx-auto h-screen bg-primary p-24 bg-zinc-50 dark:text-white "></div> */}
