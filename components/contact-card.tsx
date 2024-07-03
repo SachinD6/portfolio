@@ -92,7 +92,6 @@ export function ContactCard() {
                 className="rotate-6"
               />
             </div>
-            <CardSkeletonContainer></CardSkeletonContainer>
             <div className="mt-3">
               <CardTitle>Email me</CardTitle>
               <CardDescription>sachinxchaudhary@gmail.com</CardDescription>
@@ -152,28 +151,5 @@ export const CardDescription = ({
     >
       {children}
     </p>
-  );
-};
-
-export const CardSkeletonContainer = ({
-  className,
-  children,
-  showGradient = true,
-}: {
-  className?: string;
-  children: React.ReactNode;
-  showGradient?: boolean;
-}) => {
-  return (
-    <div
-      className={cn(
-        "h-[30px] md:h-[30px] rounded-xl z-40 w-[200px]",
-        className,
-        showGradient &&
-          "bg-neutral-300 dark:bg-[rgba(24,24,24,0.7)] [mask-image:radial-gradient(50%_50%_at_50%_50%,white_0%,transparent_100%)]"
-      )}
-    >
-      {children}
-    </div>
   );
 };
