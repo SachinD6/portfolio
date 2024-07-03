@@ -8,12 +8,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     {
-      url: 'https://acme.com/about',
+      url: 'https://sachinchaudhary.tech/about',
       lastModified: new Date(),
       priority: 0.7,
     },
     {
-      url: 'https://acme.com/stack',
+      url: 'https://sachinchaudhary.tech/stack',
       lastModified: new Date(),
       priority: 0.8,
     },
