@@ -10,10 +10,8 @@ import { cn } from "@/lib/utils";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
-import Navbar from "@/components/Navbar";
 import { ThemeProvider } from "@/components/theme-provider";
 import Footer from "@/components/Footer";
-import { FloatingNav } from "@/components/floating-navbar";
 
 export const metadata: Metadata = {
   title: "Create Next App",
