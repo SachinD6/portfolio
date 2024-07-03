@@ -1,6 +1,6 @@
 import { TechStack } from "@/components/tech-stack";
 
-export const DEVELOPMENT_SKILLS = [
+ const DEVELOPMENT_SKILLS = [
   {
     title: "Next.js",
     description: "React framework for production.",
