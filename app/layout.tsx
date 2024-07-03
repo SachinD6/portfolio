@@ -47,7 +47,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={cn(inter.className)}>
+      <body className={cn(inter.className, "bg-[#161616]")}>
       <ThemeProvider
             attribute="class"
             defaultTheme="dark"
@@ -55,11 +55,11 @@ export default function RootLayout({
             disableTransitionOnChange
             enableColorScheme
           >
-        <div className="bg-[rgb(22,22,22)] h-screen">
-          <div className="fixed inset-0 max-w-6xl mx-auto h-screen bg-primary p-24 bg-zinc-50 dark:text-white "></div>
+        <div className="bg-[#161616] h-screen">
+          {/* <div className="fixed inset-0 max-w-6xl mx-auto h-screen bg-primary p-24 bg-zinc-50 dark:text-white "></div> */}
 
-          <div className="max-w-6xl mx-auto relative p-5 sm:px-24  bg-[rgb(22,22,22)]">
-           <FloatingNav navItems={navItems} /> 
+          <div className="relative p-5 sm:px-24  bg-[#161616] ">
+          
             {children}
             <Footer />
             <Analytics />

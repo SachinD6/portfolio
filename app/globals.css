@@ -3,7 +3,7 @@
 @tailwind utilities;
  
 @layer base {
-  :root {
+  /* :root {
     --background: 0 0% 100%;
     --foreground: 240 10% 3.9%;
 
@@ -34,36 +34,36 @@
  
     --radius: 0.5rem;
   }
- 
-  .dark {
-    --background: 240 10% 3.9%;
-    --foreground: 0 0% 98%;
- 
-    --card: 240 10% 3.9%;
-    --card-foreground: 0 0% 98%;
- 
-    --popover: 240 10% 3.9%;
-    --popover-foreground: 0 0% 98%;
- 
-    --primary: 0 0% 98%;
-    --primary-foreground: 240 5.9% 10%;
- 
-    --secondary: 240 3.7% 15.9%;
-    --secondary-foreground: 0 0% 98%;
- 
-    --muted: 240 3.7% 15.9%;
-    --muted-foreground: 240 5% 64.9%;
- 
-    --accent: 240 3.7% 15.9%;
-    --accent-foreground: 0 0% 98%;
- 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 98%;
- 
-    --border: 240 3.7% 15.9%;
-    --input: 240 3.7% 15.9%;
-    --ring: 240 4.9% 83.9%;
-  }
+  */:root {
+  --background: hsl(240, 10%, 3.9%); /* Dark background color */
+  --foreground: hsl(0, 0%, 98%); /* Light foreground color */
+
+  --card: hsl(240, 10%, 3.9%); /* Match background for consistency */
+  --card-foreground: var(--foreground); /* Use light foreground color */
+
+  --popover: hsl(240, 10%, 3.9%); /* Match background */
+  --popover-foreground: var(--foreground); /* Use light foreground */
+
+  --primary: var(--foreground); /* Light color for primary elements */
+  --primary-foreground: hsl(240, 5.9%, 10%); /* Dark color for primary text */
+
+  --secondary: hsl(240, 3.7%, 15.9%); /* Slightly darker secondary color */
+  --secondary-foreground: var(--foreground); /* Light foreground */
+
+  --muted: hsl(240, 3.7%, 15.9%); /* Muted color */
+  --muted-foreground: hsl(240, 5%, 64.9%); /* Lighter muted text */
+
+  --accent: hsl(240, 3%, 19%); /* Accent color */
+  --accent-foreground: var(--foreground); /* Light foreground */
+
+  --destructive: hsl(0, 62.8%, 30.6%); /* Destructive color */
+  --destructive-foreground: var(--foreground); /* Light foreground */
+
+  --border: hsl(240, 3.7%, 15.9%); /* Border color */
+  --input: hsl(240, 3.7%, 15.9%); /* Input background */
+  --ring: hsl(240, 4.9%, 83.9%); /* Ring color */
+}
+
 }
  
 @layer base {
@@ -75,4 +75,20 @@
     background: rgb(22,22,22);
   }
 }
+
+.animated {
+  animation: up-animation 1s ease-in-out forwards; /* Replace with your desired animation */
+}
+
+@keyframes up-animation {
+  from {
+      transform: translateY(20px); /* Add slight upward movement */
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
 

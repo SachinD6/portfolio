@@ -1,32 +1,45 @@
-import Image from "next/image";
-import Navbar from "@/components/Navbar";
-import Socials from "@/components/Socials";
-import { TechsAndSkills } from "@/components/TechsAndSkills";
 import type { Metadata } from "next";
 import PortfolioIntro from "@/components/PortfolioIntro";
-import ProjectSection from "@/components/ProjectSection";
+import { ContactCard } from "@/components/contact-card";
+import { TechStack } from "@/components/tech-stack";
+import { ProjectCard } from "@/components/project-card";
+import { jsonLdSchema, metaData } from "@/lib/utils";
 
-export const metadata: Metadata = {
-  title: "Sachin- Portfolio",
-  description:
-    "Expert in React, Next.js, tRPC, Postgres, Tailwind CSS and Typescript",
-};
+import { DEVELOPMENT_SKILLS } from "./stack/page";
+
+export const metadata: Metadata = metaData;
+
 
 export default function Home() {
   return (
     <>
-      <PortfolioIntro />
+     <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdSchema) }}
+      />
 
-      <div className="projects  mt-16">
-        {/* <h2 className="font-normal text-2xl mb-6">&lt;projects&gt;</h2> */}
-        {/* <ProjectCard /> */}
-        <ProjectSection />
-      </div>
+      <div className="max-w-3xl mx-auto ">
+        <div className="flex text-center">
 
-      <div className="projects  mt-16">
-        <h2 className="font-normal text-2xl mb-6">&lt;techs-and-skills&gt;</h2>
-        <TechsAndSkills />
+        <PortfolioIntro />
+        </div>
 
+        <div className="projects">
+          {/* <h2 className="font-normal text-2xl mb-6">&lt;projects&gt;</h2> */}
+          {/* <ProjectCard /> */}
+          {/* <TechsAndSkills /> */}
+          {/* <ProjectSection /> */}
+        </div>
+
+        <div className="projects">
+          {/* <h2 className="font-normal text-2xl mb-6">&lt;techs-and-skills&gt;</h2> */}
+          {/* <ServiceCards /> */}
+
+          <TechStack items={DEVELOPMENT_SKILLS} title="Tech Stack" description="Tools I use in daily basis." isHomePage={true}/>
+
+          <ProjectCard />
+          <ContactCard />
+        </div>
         {/* <Images /> */}
       </div>
     </>

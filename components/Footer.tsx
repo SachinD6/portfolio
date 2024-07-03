@@ -1,41 +1,44 @@
-import Link from "next/link";
-
-const links = [
-  {
-    text: "About",
-    path: "/about",
-  },
-  {
-    text: "Article",
-    path: "/article",
-  },
-  // {
-  //   text: "projects",
-  //   path: "/projects",
-  // },
-  {
-    text: "Contact",
-    path: "mailto:sachinxchaudhary@gmail.com",
-  },
-];
+"use client";
+import { Section, Container } from "@/components/Craft";
+import { SocialIcons } from "./ui/social-icons";
+import Clock from "./ui/clock";
 
 export default function Footer() {
+  const currentYear = new Date().getFullYear();
+  const currentDate = new Date().toLocaleDateString("en-US", {
+    weekday: "long",
+    month: "long",
+    day: "numeric",
+  });
+
+
   return (
     <>
-      <div className="border-t-2 border-zinc-700 py-8 px-4 flex flex-wrap justify-center lg:justify-between font-sans mt-32">
-        <div className="flex max-w-2xl gap-6 flex-wrap justify-center lg:justify-start">
-          {links.map(({ text, path }, index) => (
-            <Link key={index} href={path} className="text-zinc-900 dark:text-white hover:text-teal-500 dark:hover:text-teal-500 cursor-pointer">
-                {text}
-            </Link>
-          ))}
-        </div>
-        <div className="mt-4 lg:mt-0 text-center lg:text-left">
-          <p className="text-zinc-500 dark:text-zinc-400">
-            © 2023 Sachin Chaudhary. All rights reserved.
-          </p>
-        </div>
-      </div>
+      <hr className="text-neutral-800 max-w-xl mx-auto" />
+      <footer className="not-prose max-w-4xl mx-auto text-center">
+        <Section className="p-0 md:p-0">
+          <Container className="grid gap-6">
+            <div className="grid gap-6">
+              <div className="flex flex-col md:flex-row mb-6 md:mb-0 gap-4 underline underline-offset-4 text-md ">
+                <SocialIcons />
+              </div>
+
+              <p className="text-muted-foreground">
+                ©{" "}
+                <a
+                  href="https://github.com/sachind6"
+                  className="underline underline-offset-4"
+                >
+                  github/sachind6
+                </a>
+                . All rights reserved. 2023-{currentYear}.
+              </p>
+              {/* <p className="mt-4">{currentDate}</p> */}
+              <Clock />
+            </div>
+          </Container>
+        </Section>
+      </footer>
     </>
   );
 }
