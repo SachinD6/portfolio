@@ -66,7 +66,7 @@ export function ContactCard() {
       >
         <motion.div variants={textVariants} className="text-center md:text-left">
           <h3 className="font-semibold text-xl font-sans mb-4">
-            Let&apos;s work together?
+            Let&apos;s Collaborate on Your Next Project
           </h3>
           <p className="leading-relaxed font-normal text-neutral-300">
             Explore if we are a good match and see if we can assemble the right
@@ -93,7 +93,7 @@ export function ContactCard() {
               />
             </div>
             <div className="mt-3">
-              <CardTitle>Email me</CardTitle>
+              <CardTitle>Get in Touch</CardTitle>
               <CardDescription>sachinxchaudhary@gmail.com</CardDescription>
             </div>
           </Card>

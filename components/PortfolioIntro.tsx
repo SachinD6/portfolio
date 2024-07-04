@@ -27,9 +27,9 @@ const PortfolioIntro = () => {
             <AvatarFallback>SC</AvatarFallback>
           </Avatar>
           </div>
-          <h3 className="text-md font-semibold">
+          <h1 className="text-md font-semibold">
             Full Stack Developer
-          </h3>
+          </h1>
           <p className="text-neutral-300 leading-relaxed mt-3 text-md tracking-tight">
             I&apos;m <span className="text-neutral-100 font-semibold">Sachin Chaudhary</span>, a web developer from India. Specialized in Next.js and building beautiful & functional web experiences. From Dev to Ops, I Build & Deploy.
           </p>

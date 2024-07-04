@@ -78,7 +78,7 @@ export default function Home() {
           {/* <h2 className="font-normal text-2xl mb-6">&lt;techs-and-skills&gt;</h2> */}
           {/* <ServiceCards /> */}
 
-          <TechStack items={DEVELOPMENT_SKILLS} title="Tech Stack" description="Tools I use in daily basis." isHomePage={true}/>
+          <TechStack items={DEVELOPMENT_SKILLS} title="Advanced Technologies Mastered" description="Tools I use in daily basis." isHomePage={true}/>
 
           <ProjectCard />
           <ContactCard />

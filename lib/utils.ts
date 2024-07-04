@@ -8,7 +8,7 @@ export function cn(...inputs: ClassValue[]) {
 
 export const projects = [
   {
-    projectTitle: "code2snap",
+    projectTitle: "code2snap: An Innovative Project",
     projectData: {
       liveURL: "https://code2snap.vercel.app/",
       githubURL: "https://github.com/SachinD6/code2snap",
@@ -23,15 +23,14 @@ export const projects = [
     image: "/code2snap-thumbnail.png",
   },
   {
-    projectTitle: "AI Image Transformer",
+    projectTitle: "AI Image Transformer: Generative AI Solution",
     projectData: {
       liveURL: "",
       githubURL: "https://github.com/SachinD6/hit-track",
       relatedLinks: [],
     },
     description: [
-      "A web app that transforms images using AI.",
-      " Built using Next.js server actions & cloudinary.",
+      "Explore a variety of styles – all in real-time. Built with cutting-edge technology (Next.js & Cloudinary) for a seamless experience",
       " The app can transform images into different art styles, generative-fill, and more on the go.",
     ],
     tech: ["Next.js", "Typescript", "Redis", "Aceternity UI"],
@@ -39,7 +38,7 @@ export const projects = [
     image: "/image-gallery-thumbnail.png",
   },
   {
-    projectTitle: "disney plus clone",
+    projectTitle: "Disney Plus Clone: Showcasing React Prowess",
     projectData: {
       liveURL: "",
       githubURL: "https://github.com/SachinD6/Dmovie",
@@ -92,27 +91,27 @@ export const jsonLdSchema = {
 
 export const metaData = {
   title:
-    "Full-Stack Developer | Next.js, React, TypeScript, DevOps & Gen AI | Sachin Chaudhary",
+    "Sachin Chaudhary: Full-Stack Developer Expertise in Next.js, React, TypeScript, DevOps & Generative AI",
   description:
-    "Explore the portfolio of Sachin Chaudhary, a full-stack developer specializing in Next.js, React, TypeScript, Docker, AWS, and Generative AI.",
+    "Discover the portfolio of Sachin Chaudhary, a skilled full-stack developer specializing in cutting-edge technologies like Next.js, React, TypeScript, Docker, AWS, and Generative AI.",
   keywords: [
-    "Full-Stack Developer",
-    "Next.js",
-    "React",
-    "Typescript",
-    "Docker",
-    "AWS",
-    "Generative AI",
-    "DevOps",
+    "full-Stack developer",
+    "next.js",
+    "react",
+    "typescript",
+    "docker",
+    "aws",
+    "generative ai",
+    "devops",
     "Sachin Chaudhary",
   ],
   openGraph: {
     url: "https://sachinchaudhary.tech",
     type: "website",
     title:
-      "Full-Stack Developer | Next.js, React, TypeScript, DevOps & Gen AI | Sachin Chaudhary",
+      "Sachin Chaudhary: Full-Stack Developer Expertise in Next.js, React, TypeScript, DevOps & Generative AI",
     description:
-      "Explore the portfolio of Sachin Chaudhary, a full-stack developer specializing in Next.js, React, Typescript, Docker, AWS, and Generative AI.",
+      "Discover the portfolio of Sachin Chaudhary, a skilled full-stack developer specializing in cutting-edge technologies like Next.js, React, TypeScript, Docker, AWS, and Generative AI.",
     images: [
       {
         url: "https://sachinchaudhary.tech/images/home/thumbnail.png", // Replace with your image
