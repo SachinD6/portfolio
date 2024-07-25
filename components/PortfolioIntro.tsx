@@ -23,7 +23,7 @@ const PortfolioIntro = () => {
         <div className="mt-6 flex flex-col items-center">
             <div className="h-20 w-28 mb-2">
           <Avatar className="mb-4">
-            <AvatarImage src="/logo.png" className="rounded-full h-20 w-28" />
+            <AvatarImage src="/logo.jpeg" className="rounded-full h-32 w-32" />
             <AvatarFallback>SC</AvatarFallback>
           </Avatar>
           </div>
